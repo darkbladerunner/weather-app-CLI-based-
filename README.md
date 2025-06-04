@@ -1,8 +1,8 @@
-# 🌦️ Weather App (CLI-Based)
+# 🌦️ Weather App (CLI-Based, No API Key Needed)
 
-A simple and fun command-line weather app built with Python!  
-Check real-time weather for any city right from your terminal.  
-Perfect for hands-on project management and showcasing custom animated contribution graphs on GitHub[2].
+A modern, colorful command-line weather app built with Python!  
+Check real-time weather for any city—or your current location—right from your terminal.  
+Great for hands-on project management and showcasing animated contribution graphs on GitHub[1].
 
 ---
 
@@ -16,15 +16,8 @@ Perfect for hands-on project management and showcasing custom animated contribut
 
 2. **Install dependencies:**
    ```bash
-   pip install requests
+   pip install requests colorama
    ```
-
-3. **Get your OpenWeatherMap API key:**
-   - Sign up at [OpenWeatherMap](https://openweathermap.org/api) 🌍
-   - Copy your API key
-
-4. **Add your API key:**
-   - Open `weather_cli.py` and replace `YOUR_API_KEY_HERE` with your API key.
 
 ---
 
@@ -35,6 +28,7 @@ python weather_cli.py
 ```
 
 - Enter a city name when prompted.
+- Type `auto` to detect your location via your IP address.
 - Type `exit` to quit the app.
 
 ---
@@ -42,24 +36,37 @@ python weather_cli.py
 ## 🌈 Example
 
 ```
-=== Simple Weather CLI App ===
+=============================================
+         Simple Weather CLI App
+=============================================
 Type 'exit' to quit.
+Type 'auto' to use your current location.
 
-Enter city name: London
+Enter city name (or 'auto'): auto
+Detected your city as: Bathinda
 
-Weather for London, GB:
-  Description : Light Rain
-  Temperature : 15°C
-  Feels Like  : 13°C
-  Humidity    : 82%
-  Wind Speed  : 4.1 m/s
+🌤️  Weather for Bathinda, IN:
+  Temperature     : 38°C
+  Feels Like      : 37°C
+  Humidity        : 24%
+  Wind Speed      : 2.5 m/s
+  Weather Code    : 1
+
+Enter city name (or 'auto'): London
+
+☁️  Weather for London, GB:
+  Temperature     : 18°C
+  Feels Like      : 17°C
+  Humidity        : 65%
+  Wind Speed      : 3.9 m/s
+  Weather Code    : 3
 ```
 
 ---
 
 ## 📈 Project Management
 
-This project was created for hands-on project management and to demonstrate custom animated contribution graphs on GitHub[2].
+This project was created for hands-on project management and to demonstrate custom animated contribution graphs on GitHub[1].
 
 ---
 
@@ -71,5 +78,3 @@ MIT License
 
 ✨ **Feel free to contribute or suggest improvements!**
 
-[1] https://github.com/yourusername/weather-cli-app.git
-[2] programming.github
